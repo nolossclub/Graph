@@ -1,10 +1,12 @@
 type Mint @entity {
 	id: ID!
+	txn: Bytes!
 	address: Bytes!
 }
 
 type Winner @entity {
 	id: ID!
+	txn: Bytes!
 	address: Bytes!
 	amount: BigInt!
 }

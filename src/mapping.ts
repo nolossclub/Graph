@@ -7,6 +7,7 @@ import { Winner, Mint } from '../generated/schema';
 export function handleMint(event: mint): void {
 	let entity = new Mint(event.transaction.hash.toHex());
 
+	entity.txn = event.transaction.hash;
 	entity.address = event.params._from;
 
 	entity.save();
@@ -15,6 +16,7 @@ export function handleMint(event: mint): void {
 export function handleWinner(event: winner): void {
 	let entity = new Winner(event.transaction.hash.toHex());
 
+	entity.txn = event.transaction.hash;
 	entity.address = event.params._from;
 	entity.amount = event.params.amount;
 

@@ -16,6 +16,7 @@ export class Mint extends Entity {
     super();
     this.set("id", Value.fromString(id));
 
+    this.set("txn", Value.fromBytes(Bytes.empty()));
     this.set("address", Value.fromBytes(Bytes.empty()));
   }
 
@@ -45,6 +46,15 @@ export class Mint extends Entity {
     this.set("id", Value.fromString(value));
   }
 
+  get txn(): Bytes {
+    let value = this.get("txn");
+    return value!.toBytes();
+  }
+
+  set txn(value: Bytes) {
+    this.set("txn", Value.fromBytes(value));
+  }
+
   get address(): Bytes {
     let value = this.get("address");
     return value!.toBytes();
@@ -60,6 +70,7 @@ export class Winner extends Entity {
     super();
     this.set("id", Value.fromString(id));
 
+    this.set("txn", Value.fromBytes(Bytes.empty()));
     this.set("address", Value.fromBytes(Bytes.empty()));
     this.set("amount", Value.fromBigInt(BigInt.zero()));
   }
@@ -88,6 +99,15 @@ export class Winner extends Entity {
 
   set id(value: string) {
     this.set("id", Value.fromString(value));
+  }
+
+  get txn(): Bytes {
+    let value = this.get("txn");
+    return value!.toBytes();
+  }
+
+  set txn(value: Bytes) {
+    this.set("txn", Value.fromBytes(value));
   }
 
   get address(): Bytes {
