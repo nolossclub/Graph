@@ -1,0 +1,10 @@
+type Mint @entity {
+	id: ID!
+	address: Bytes!
+}
+
+type Winner @entity {
+	id: ID!
+	address: Bytes!
+	amount: BigInt!
+}

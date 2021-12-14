@@ -1,0 +1,26 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: bsc
+    source:
+      address: "0xCcA5090c5D80189eF27bc802eCB50A771CdA41Fc"
+      abi: Contract
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Mint
+        - Winner
+      abis:
+        - name: Contract
+          file: Contract\abis\Contract.json
+      eventHandlers:
+        - event: Mint(indexed address)
+          handler: handleMint
+        - event: Winner(indexed address,uint256)
+          handler: handleWinner
+      file: Contract\Contract.wasm
