@@ -24,3 +24,14 @@ Subgraph endpoints:
 Queries (HTTP):     https://api.thegraph.com/subgraphs/name/nolossclub/usdt
 
 Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/nolossclub/usdt
+
+# BUSD
+
+
+Deployed to https://thegraph.com/explorer/subgraph/nolossclub/busd
+
+Subgraph endpoints:
+
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/nolossclub/busd
+
+Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/nolossclub/busd
