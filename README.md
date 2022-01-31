@@ -1,10 +1,14 @@
 # Graph
 
-https://thegraph.com/hosted-service/subgraph/nolossclub/no-loss-club
+DEMO https://thegraph.com/hosted-service/subgraph/nolossclub/no-loss-club
 
 
-# Subgraph endpoints:
+# USDC
 
-Queries (HTTP):     https://api.thegraph.com/subgraphs/name/nolossclub/no-loss-club
+Deployed to https://thegraph.com/explorer/subgraph/nolossclub/usdc
 
-Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/nolossclub/no-loss-club
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/nolossclub/usdc
+Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/nolossclub/usdc
+
+
