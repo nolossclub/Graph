@@ -1,6 +1,6 @@
-# Graph
+# Graph  DEMO 
 
-DEMO https://thegraph.com/hosted-service/subgraph/nolossclub/no-loss-club
+https://thegraph.com/hosted-service/subgraph/nolossclub/no-loss-club
 
 
 # USDC
@@ -8,7 +8,9 @@ DEMO https://thegraph.com/hosted-service/subgraph/nolossclub/no-loss-club
 Deployed to https://thegraph.com/explorer/subgraph/nolossclub/usdc
 
 Subgraph endpoints:
+
 Queries (HTTP):     https://api.thegraph.com/subgraphs/name/nolossclub/usdc
+
 Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/nolossclub/usdc
 
 
